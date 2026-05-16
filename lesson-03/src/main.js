@@ -6,7 +6,7 @@ console.log('The console is used for output');
 console.log('JS makes a webpage interactive');
 
 // 1. Declare variables using var, let, const
-const greeting = 'Hello World!'; //const variables cannot be redeclared once initialized
+const GREETING = 'Hello World!'; //const variables cannot be redeclared once initialized, they usually use screaming snake case (uppercase with underscores)
 let count = 3; //let variables can be reassigned, variable is declared in the line where it is placed
 var bool = true; //var variables can be reassigned, variable is hoisted: declared at the beginning of the code
 
@@ -32,11 +32,11 @@ console.log('Type of greeting:', typeof greeting); //displays variable type
 //const continueDemo = confirm(`Hi ${userName}, would you like to continue the demo?`);
 //console.log('User chose to confirm', continueDemo)
 
-const strNumber = '42';
-const parsedNumber = parseInt(strNumber, 10);
-console.log(`Parsed "${strNumber}" type: ${typeof strNumber}, to ${parsedNumber} type: ${typeof parsedNumber}`);
-const actualString = parsedNumber.toString();
-console.log(actualString);
+const STR_NUM = '42';
+const PARSED_NUM = parseInt(strNumber, 10);
+console.log(`Parsed "${STR_NUM}" type: ${typeof STRNUM}, to ${PARSED_NUM} type: ${typeof PARSED_NUM}`);
+const ACTUAL_STR = PARSED_NUM.toString();
+console.log(ACTUAL_STR);
 
 // 4. Manipulate values and observe results in the console
 let x = 10;
@@ -75,31 +75,31 @@ a %= 4; //2
 
 //composite data types
 //array
-const fruits = ["apple", "banana", "cherry"];
-const numbers = [1,2,3];
-const mix = [1, "name", true];
-console.log(fruits, numbers, mix);
+const FRUITS = ["apple", "banana", "cherry"];
+const NUMBERS = [1,2,3];
+const MIX = [1, "name", true];
+console.log(FRUITS, NUMBERS, MIX);
 //object
 //comprises of key value pairs
 //can have any data type in keys/values
 //keys do not need quotes for string
-const person = {1: "name", 2: "age", 3: "height"}; //curly brackets are indentifying an object 
+const PERSON = {1: "name", 2: "age", 3: "height"}; //curly brackets are indentifying an object 
 //1:"name" 1 is the key and "name" is the value
 
-const mason = "Mason";
-const PERSON = {
-    name: mason,
+const MASON = "Mason";
+const PERSON_NAME = {
+    name: MASON,
     age: 21,
     height: `5'6"`,
     weight: "85kg"
 };
-console.log(person, PERSON);
+console.log(PERSON, PERSON_NAME);
 
-const human = {
+const HUMAN = {
     name: "Mason",
     age: 21
 };
-console.log(human);
+console.log(HUMAN);
 
 // Student TODO: 
 // Prompt the user for their name and age

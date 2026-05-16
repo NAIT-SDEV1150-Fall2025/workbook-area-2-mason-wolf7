@@ -2,9 +2,47 @@ console.log('Lesson 04 starter loaded');
 
 // Instructor TODO:
 // 1. Simple if
+const X = 5; //variable assignment
+if (X > 0) {
+  console.log("x is +ve (positive)")
+};
+
 // 2. if-else
+//== and === are both comparison operators
+//=== strictly checks for the value with the correct data type
+//3 == "3" is true
+//3 === "3" is false
+if (X % 2 === 0) {
+  console.log('x is even');
+} else {
+  console.log('x is odd');
+};
+
 // 3. Nested if-else
+if (x > 10) {
+  console.log('x is greater then 10');
+} else if (x < 10) {
+  console.log('x is less than 10');
+} else {
+  console.log('x is between 10 and 10');
+};
 // 4. while loop
+let count = 3; 
+while (count > 0){
+  console.log('countdown', count);
+  count = count - 1;
+};
+let counter = 10;
+while (counter === 0) {
+  console.log(counter);
+  count -= 1;
+};
+//first iteration: (value of count is 3) 3>0 true,countdown :3  3-1= 2
+//second iteration : (value of count is 2) 2>0 true,countdown : 2 , 2-1=1
+//third iteration: (value of count is 1) 1>0 true, countdown : 1, 1-1 = 0
+//fourth iteration: 0>0 false
+//try printing numbers from 1 to 10 using while loop
+
 // 5. do-while loop
 // 6. for loop
 
