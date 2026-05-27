@@ -42,11 +42,10 @@ function injectInnerHTML(selector, text) {
     }
 }
 
-updateText('.tagline', 'Selecting, reading and modifying nodes with Javascript')
-injectInnerHTML('#hero-caption', `<p class = 'desc'><strong>This</strong> text was injected using <em>updateInnerHTML</em> function</p>`);
-
 // 5. Use helpers to perform simple tasks
 // OPTIONAL: use attribute and style helpers if defined
+updateText('.tagline', 'Selecting, reading and modifying nodes with Javascript');
+injectInnerHTML('#hero-caption', `<p class = 'desc'><strong>This</strong> text was injected using <em>updateInnerHTML</em> function</p>`);
 
 // 6. Footer text tweak (demonstrate class toggle & style change)
 footerNote.classList.add('footer-strong');
