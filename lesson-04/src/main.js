@@ -33,7 +33,7 @@ while (count > 0){
   count = count - 1;
 };
 let counter = 10;
-while (counter === 0) {
+while (counter > 0) {
   console.log(counter);
   count -= 1;
 };
@@ -44,7 +44,25 @@ while (counter === 0) {
 //try printing numbers from 1 to 10 using while loop
 
 // 5. do-while loop
+let i = 0;
+// a do-while loop always runs atleast once even if the condition is false.
+do {
+  console.log('i is:', i);
+  i++;
+} while (i < 3);
+
+// write a loop that prints numbers from 1 to 10.
+let w = 1;
+while (w <= 10) {
+  console.log(w);
+  w++;
+};
+
 // 6. for loop
+for (let j = 0; j < 3; j++) {
+  console.log(`j = ${j}`);
+};
+
 
 // Student TODO:
 // 7. Snippet with bugs for debugging practice

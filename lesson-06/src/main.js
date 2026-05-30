@@ -25,14 +25,33 @@ console.log('Selected elements:', {
 // 4. Add a new item dynamically
 
 // 5. Retreive all list items (querySelectorAll) and update their text
+const features = document.querySelectorAll('.feature');
+
+features.forEach((liEl, idx) => {
+  liEl.textContent = `${idx + 1}. ${liEl.textContent}`;
+},
+);
+// () => {} arrow functions are not named and usually limited to a paticular block of code
 
 // 6. Removing the first item from the list using DOM relationships to find it
+// .removechild removes the element from the children of the parent node
+featureList.removeChild(featureList.firstElementChild);
 
 // 7. Update the second item using nextElementSibling
+featureList.firstElementChild.nextElementSibling.textContent += `(updated)`;
 
 // 8. Move the last item to the front of the list
+const lastEl = featureList.removeChild(featureList.lastChild);
+// insertBefore(element to be inserted, the location you want to insert it)
+featureList.insertBefore(lastEl, featureList.firstChild);
 
 // 9. Use a timer to add a new item after 3 seconds have passed
+setTimeout(() => {
+  const timeEl = document.createElement('li');
+  timeEl.className = 'feature';
+  timeEl.textContent = 'added with timeout';
+  featureList.appendChild(timeEl);
+}, 3000); // = 3 seconds
 
 // **** THE FOLLOWING IS EXISTING CODE FROM LESSON 05
 
