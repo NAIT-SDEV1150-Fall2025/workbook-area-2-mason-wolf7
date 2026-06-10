@@ -1,14 +1,14 @@
 console.log('Lesson 06 starter loaded');
 
 // Selecting elements
-const titleEl = document.querySelector('#page-title');
-const taglineEl = document.querySelector('.tagline');
+const titleEl = document.querySelector('#page-title'); // when using query selector, use a # in front to denote an id
+const taglineEl = document.querySelector('.tagline'); // when using query selector, use a . in front to denote a class
 const heroImg = document.querySelector('#hero-img');
 const heroCaption = document.querySelector('#hero-caption');
 const dynamicBox = document.querySelector('#dynamic-box');
 const footerNote = document.querySelector('#footer-note');
 
-const featureList = document.getElementById('feature-list');
+const featureList = document.getElementById('feature-list'); // when NOT using query selector, does not need any symbol in front
 
 // 1. Create a new variable for the feature list element
 const liEl = document.createElement('li'); // <li></li>
