@@ -1,0 +1,19 @@
+{
+  "name": "lesson-13",
+  "version": "1.0.0",
+  "description": "```sh mkdir lesson-13 cd lesson-13 npm init # follow prompts ```",
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "dayjs": "^1.11.21"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.4"
+  }
+}
